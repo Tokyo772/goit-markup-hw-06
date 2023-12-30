@@ -579,6 +579,15 @@ img {
   /* display: flex;
   align-items: baseline; */
 }
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+
+    padding: 0 108px;
+  }
+}
 @media only screen and (max-width: 767.98px) {
   .footer-container {
     text-align: center;
@@ -663,7 +672,9 @@ img {
   fill: #f4f4fd;
 }
 
-.footer= .form-text {
+.footer-wrapper-form {
+}
+.form-text {
   margin-bottom: 16px;
 
   color: #fff;
@@ -673,12 +684,20 @@ img {
 }
 .subscribe-form {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
 }
-
+.subscribe-form-field {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-form-field {
+    max-width: 264px;
+  }
+}
 .subscribe-form-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
 
@@ -694,6 +713,7 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: none;
 }
+
 .subscribe-form-input::placeholder {
   color: #fff;
 }
