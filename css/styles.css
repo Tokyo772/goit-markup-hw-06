@@ -177,24 +177,89 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office.jpg);
+    url(../images/hero/Dark-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0 188px;
-  max-width: 1440px;
-  margin: auto;
+
+  padding: 72px 0;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg-mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg-tabl.jpeg);
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg-tabl@2x.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office@2x.jpeg);
+  }
 }
 .hero-title {
   margin: auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
 
   color: #fff;
   text-align: center;
-  font-size: 56px;
-  line-height: 1.07em;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  max-width: 496px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 .form-btn,
 .button-hero {
@@ -288,7 +353,10 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.advantages-title {
+@media only screen and (min-width: 768px) {
+  .advantages-title {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .advantages-title {
