@@ -483,9 +483,15 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
   row-gap: 48px;
+  column-gap: 24px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .portfolio-list {
+    row-gap: 72px;
+  }
+}
+
 .portfolio-item {
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: #fff;
