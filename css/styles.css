@@ -80,6 +80,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .logo {
@@ -982,7 +983,15 @@ img {
   justify-content: center;
   align-items: center;
 
+  margin-left: auto;
+
   border: none;
   padding: 0;
   background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
