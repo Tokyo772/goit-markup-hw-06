@@ -92,8 +92,10 @@ img {
   text-transform: uppercase;
 }
 .logo-header {
-  /* margin-right: 76px; */
+  padding: 17px 0;
+  /* margin-right: 149px; */
 }
+
 .logo-span {
   color: #2e2f42;
 }
@@ -971,4 +973,16 @@ img {
 .form-link-checkbox {
   color: #4d5ae5;
   text-decoration-line: underline;
+}
+
+/* menu burger */
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }
