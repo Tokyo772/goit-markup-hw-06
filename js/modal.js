@@ -18,9 +18,26 @@
       refs.modal.classList.add('is-hidden');
     }
   }
-
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('no-scroll');
   }
 })();
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.mobile-menu');
+let menuItem = document.querySelectorAll('.close-menu');
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('is-open');
+    menu.classList.toggle('is-open');
+  });
+
+  menuItem.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function () {
+      menuBtn.classList.toggle('is-open');
+      menu.classList.toggle('is-open');
+    });
+  });
+}
