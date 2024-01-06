@@ -822,6 +822,14 @@ img {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (max-width: 767.98px) {
+  .modal {
+    padding: 72px 16px 16px;
+
+    width: 288px;
+    min-height: 623px;
+  }
+}
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -954,6 +962,8 @@ img {
   fill: #f4f4fd;
 }
 .form-label-checkbox {
+  display: flex;
+  align-items: center;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -966,7 +976,7 @@ img {
 
   fill: transparent;
 
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   margin-right: 8px;
 
