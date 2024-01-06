@@ -30,7 +30,6 @@ let menuItem = document.querySelectorAll('.close-menu');
 
 if (menuBtn) {
   menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('is-open');
     menu.classList.toggle('is-open');
   });
 
